@@ -1,0 +1,184 @@
+body {
+    background-size: cover;
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background-attachment: fixed;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION BAR */
+.nav {
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: "Audiowide", sans-serif;
+    padding:10px;
+    
+}
+
+#logo {
+    height: 60px;
+    width: 70px;
+}
+
+#name {
+    font-size: 40px;
+    color: #073B61;
+    font-weight: 800;
+    margin-left: 280px;
+    margin-right: 190px;
+}
+
+#search {
+    font-size: 15px;
+    width: 200px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+
+#searchbutton {
+    height: 35px;
+    padding: 1px 10px 1px;
+    background-color: rgb(32, 75, 89);
+    color: white;
+    border: 4px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+/* MENU OPTIONS */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 10px;
+    height: 50px;
+    align-items: center;
+    
+}
+
+.options a {
+    text-decoration: none;
+}
+.options a span {
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 0px 15px white, 0px 0px 15px white,0px 0px 15px white;
+}
+
+/* HEADINGS */
+#heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #2A7B9B, #57C785, #EDDD53);
+  height: 70px;
+}
+
+#heading span{
+    font-size: 40px;
+    font-family: "Audiowide", sans-serif;
+    text-shadow: 0px 0px 24px rgb(185, 184, 184);
+}
+
+
+p, #thisweek, #lastweek {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 0px 8px white;
+    
+}
+
+/* GAME CONTAINERS */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+}
+
+.container div {
+    height: 375px;
+    width: 250px;
+    border: 10px solid black;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 8px white);
+    background-color: black;
+}
+
+.container div:hover {
+    transform: scale(1.06);
+    box-shadow: 1px 1px 15px black;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.footer {
+  background: linear-gradient(135deg, #000, #1a1a1a, #800080, #00bfff);
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  color: white;
+  font-family: "Audiowide", sans-serif;
+}
+
+.footer-content ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    #name {
+        font-size: 24px;
+    }
+    #search {
+        width: 150px;
+    }
+    #searchbutton {
+        width: auto;
+        padding: 5px;
+    }
+    p, #thisweek, #lastweek {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav, .options {
+        flex-direction: column;
+    }
+    #name {
+        font-size: 20px;
+    }
+    .container div {
+        width: 90%;
+    }
+}
